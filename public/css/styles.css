@@ -52,4 +52,9 @@ button {
     background: #888888;
     color: white;
     padding: 8px;
+    margin-right: 5px;
+}
+
+form {
+    float: left;
 }

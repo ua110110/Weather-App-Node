@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback) => {
             const temp = (body.main.temp-273).toFixed(2) ;
             const max_temp = (body.main.temp_max - 273).toFixed(2);
             const min_temp = (body.main.temp_min - 273).toFixed(2);
-            callback(undefined, '"'+body.weather[0].description + '". It is currently ' + temp + ' degress out. There is a ' + body.main.humidity + '% humidity.' + 'Max and Min Temp for today are '+max_temp+' and ' + min_temp + 'degress . Visibility for today is '+ body.visibility )
+            callback(undefined, '"'+body.weather[0].description + '". It is currently ' + temp + ' degress out. There is a ' + body.main.humidity + '% humidity.' + ' Max and Min Temp for today are '+max_temp+' and ' + min_temp + ' degress . Visibility for today is '+ body.visibility )
         }
     })
 }
